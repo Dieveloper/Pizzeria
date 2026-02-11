@@ -1,0 +1,80 @@
+:root { 
+    --rojo: #b02323; 
+    --verde: #2e5a1c; 
+    --papel: #f9f1dc; 
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+    background-image: linear-gradient(90deg, rgba(204, 0, 0, 0.4) 50%, transparent 50%),
+                      linear-gradient(rgba(204, 0, 0, 0.4) 50%, transparent 50%);
+    background-size: 140px 140px;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-container {
+    background-color: var(--papel);
+    padding: 40px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 800px;
+    border: 12px solid #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.admin-header h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 4rem;
+    color: var(--rojo);
+    text-align: center;
+    margin: 0;
+}
+
+.admin-header p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.tabla-usuarios { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background: white; 
+    margin-top: 20px; 
+}
+
+.tabla-usuarios th, .tabla-usuarios td { 
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    text-align: left; 
+}
+
+.tabla-usuarios th { 
+    background-color: var(--rojo); 
+    color: white; 
+    font-family: 'Special Elite'; 
+    text-transform: uppercase;
+}
+
+.tabla-usuarios tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabla-usuarios tr:hover {
+    background-color: #fff9e6;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--rojo);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-volver:hover {
+    text-decoration: underline;
+}

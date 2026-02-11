@@ -1,0 +1,127 @@
+:root {
+    --rojo-pizza: #b02323;
+    --verde-italia: #2e5a1c;
+    --papel-viejo: #f9f1dc;
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-image: 
+        linear-gradient(90deg, rgba(204, 0, 0, 0.5) 50%, transparent 50%),
+        linear-gradient(rgba(204, 0, 0, 0.5) 50%, transparent 50%);
+    background-size: 120px 120px; 
+}
+
+.admin-card {
+    background-color: var(--papel-viejo);
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    padding: 3rem;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    border: 12px solid #fff; 
+    box-sizing: border-box;
+}
+
+.admin-card::before {
+    content: "100% Artesano";
+    position: absolute;
+    top: 25px;
+    right: -25px;
+    background: var(--rojo-pizza);
+    color: white;
+    padding: 8px 30px;
+    font-size: 0.9rem;
+    transform: rotate(35deg);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+h2 {
+    font-family: 'Cookie', cursive;
+    font-size: 4rem;
+    color: var(--rojo-pizza);
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+}
+
+p.subtitle {
+    text-align: center;
+    color: var(--verde-italia);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-bottom: 2px dashed var(--rojo-pizza);
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.campo { margin-bottom: 1.5rem; }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255,255,255,0.6);
+    border: 1px solid #bbb;
+    border-bottom: 3px solid #666;
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid var(--verde-italia);
+    background: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: var(--rojo-pizza);
+    color: white;
+    border: none;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #701010;
+    transition: all 0.1s;
+    margin-top: 10px;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 #701010;
+}
+
+.nav-footer {
+    margin-top: 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 1rem;
+}
+
+.link-item {
+    color: var(--verde-italia);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-item:hover { color: var(--rojo-pizza); }

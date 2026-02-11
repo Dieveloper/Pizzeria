@@ -1,0 +1,64 @@
+:root { 
+    --rojo: #b02323; 
+    --verde: #2e5a1c; 
+    --papel: #f9f1dc; 
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+    background-image: linear-gradient(90deg, rgba(204, 0, 0, 0.4) 50%, transparent 50%),
+                      linear-gradient(rgba(204, 0, 0, 0.4) 50%, transparent 50%);
+    background-size: 140px 140px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.formulario-card {
+    background-color: var(--papel); 
+    padding: 40px; 
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 500px; 
+    border: 12px solid #fff; 
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+h2 { 
+    font-family: 'Cookie', cursive; 
+    font-size: 3.5rem; 
+    color: var(--rojo); 
+    text-align: center; 
+    margin: 0; 
+}
+
+.campo { 
+    margin-bottom: 20px; 
+}
+
+label { 
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+input { 
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #bbb; 
+    font-family: 'Special Elite'; 
+    box-sizing: border-box; 
+}
+
+.btn-guardar { 
+    width: 100%; 
+    padding: 15px; 
+    background: var(--rojo); 
+    color: white; 
+    border: none; 
+    font-family: 'Special Elite'; 
+    font-size: 1.2rem; 
+    cursor: pointer;
+}

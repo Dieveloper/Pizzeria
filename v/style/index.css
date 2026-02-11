@@ -1,0 +1,182 @@
+:root {
+    --rojo-pizza: #b02323;
+    --verde-italia: #2e5a1c;
+    --papel-viejo: #f9f1dc;
+    --blanco: #ffffff;
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanco);
+    background-image: 
+        linear-gradient(90deg, rgba(204, 0, 0, 0.4) 50%, transparent 50%),
+        linear-gradient(rgba(204, 0, 0, 0.4) 50%, transparent 50%);
+    background-size: 140px 140px;
+}
+
+/* --- NAVEGACIÓN --- */
+.navbar {
+    background: var(--papel-viejo);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid var(--rojo-pizza);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-family: 'Cookie', cursive;
+    font-size: 2.8rem;
+    color: var(--rojo-pizza);
+    text-decoration: none;
+}
+
+.user-nav a {
+    color: var(--verde-italia);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.btn-carrito {
+    background: var(--verde-italia); 
+    color: white !important; 
+    padding: 5px 12px; 
+    border-radius: 4px; 
+}
+
+/* --- CONTENEDOR TIPO CARTA --- */
+.carta-papel, .carta-perfil {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: var(--papel-viejo);
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    padding: 50px;
+    border: 15px solid #fff;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+h1, h2 {
+    font-family: 'Cookie', cursive;
+    font-size: 5rem;
+    color: var(--rojo-pizza);
+    text-align: center;
+    margin: 0;
+}
+
+/* --- FILTROS DE CATEGORÍA --- */
+.filtros-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed var(--rojo-pizza);
+}
+
+.btn-filtro {
+    background: transparent;
+    padding: 8px 15px;
+    border: 2px solid var(--rojo-pizza);
+    color: var(--rojo-pizza) !important;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 0 !important;
+    transition: all 0.2s;
+}
+
+.btn-filtro:hover, .btn-filtro.activo {
+    background: var(--rojo-pizza);
+    color: white !important;
+}
+
+/* --- GRID DE PRODUCTOS --- */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.card-plato {
+    background: rgba(255,255,255,0.4);
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.card-plato:hover {
+    transform: translateY(-5px);
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.foto-plato {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nombre-plato {
+    font-size: 1.5rem;
+    color: var(--rojo-pizza);
+    margin: 15px 0 5px 0;
+}
+
+.precio-plato {
+    color: var(--verde-italia);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-ordenar {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--rojo-pizza);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+.tabla-datos th, .tabla-datos td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.tabla-datos th {
+    background-color: var(--rojo-pizza);
+    color: white;
+    text-transform: uppercase;
+}
+
+/* --- BOTONES ADMIN --- */
+.admin-tools {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.admin-tools a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}

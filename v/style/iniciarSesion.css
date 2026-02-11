@@ -1,0 +1,140 @@
+:root {
+    --rojo-pizza: #b02323;
+    --verde-italia: #2e5a1c;
+    --papel-viejo: #f9f1dc;
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-image: 
+        linear-gradient(90deg, rgba(204, 0, 0, 0.4) 50%, transparent 50%),
+        linear-gradient(rgba(204, 0, 0, 0.4) 50%, transparent 50%);
+    background-size: 140px 140px;
+}
+
+.registro-container {
+    background-color: var(--papel-viejo);
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+    border: 12px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.registro-container::before {
+    content: "Benvenuti!";
+    position: absolute;
+    top: 20px;
+    left: -25px;
+    background: var(--verde-italia);
+    color: white;
+    padding: 8px 25px;
+    font-size: 0.9rem;
+    transform: rotate(-30deg);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.header-registro h2 {
+    font-family: 'Cookie', cursive;
+    font-size: 4rem;
+    color: var(--rojo-pizza);
+    margin: 0;
+    line-height: 1;
+}
+
+.header-registro p {
+    color: var(--verde-italia);
+    font-weight: bold;
+    margin-bottom: 25px;
+    border-bottom: 2px dashed var(--rojo-pizza);
+    padding-bottom: 15px;
+}
+
+.campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid #bbb;
+    border-bottom: 3px solid #666;
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input:focus {
+    background: #fff;
+    border-bottom: 3px solid var(--verde-italia);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--rojo-pizza);
+    color: white;
+    border: none;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #701010;
+    transition: all 0.1s;
+    margin-top: 10px;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 #701010;
+}
+
+.footer-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 15px;
+}
+
+.footer-link a {
+    color: var(--rojo-pizza);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}
+.header-link a, 
+.header-link a:visited, 
+.header-link a:hover, 
+.header-link a:active {
+    text-decoration: none !important;
+}

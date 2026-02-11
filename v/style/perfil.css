@@ -1,0 +1,126 @@
+:root { 
+    --rojo: #b02323; 
+    --verde: #2e5a1c; 
+    --papel: #f9f1dc; 
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+    background-image: linear-gradient(90deg, rgba(204, 0, 0, 0.4) 50%, transparent 50%),
+                      linear-gradient(rgba(204, 0, 0, 0.4) 50%, transparent 50%);
+    background-size: 140px 140px;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; /* Cambiado a start para que si hay muchos pedidos se pueda hacer scroll */
+    min-height: 100vh; 
+    margin: 0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.carta-perfil {
+    background-color: var(--papel); 
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    padding: 40px; 
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 850px; /* Más ancho para la tabla de pedidos */
+    border: 12px solid #fff; 
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+h2 { 
+    font-family: 'Cookie', cursive; 
+    font-size: 4rem; 
+    color: var(--rojo); 
+    text-align: center; 
+    margin: 0 0 20px 0; 
+}
+
+/* Títulos de sección (Direcciones e Historial) */
+.seccion-titulo { 
+    font-family: 'Cookie', cursive; 
+    font-size: 2.8rem; 
+    color: var(--rojo); 
+    margin-top: 40px; 
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 5px;
+}
+
+/* Estilo para las cajas de direcciones */
+.dir-box {
+    background: rgba(255,255,255,0.6); 
+    border: 1px solid #bbb;
+    padding: 15px; 
+    margin: 15px 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.dir-box:hover {
+    background: #fff;
+    border-color: var(--verde);
+}
+
+/* Botones de acción */
+.btn-post { 
+    background: var(--verde); 
+    color: white; 
+    padding: 8px 15px; 
+    border: none; 
+    font-family: 'Special Elite'; 
+    cursor: pointer; 
+    font-size: 0.85rem;
+    box-shadow: 2px 2px 0 #1e3d12;
+}
+
+.btn-post:active {
+    transform: translate(1px, 1px);
+    box-shadow: none;
+}
+
+/* Estilo para la tabla de pedidos */
+.tabla-pedidos { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 15px; 
+    background: rgba(255,255,255,0.4); 
+}
+
+.tabla-pedidos th { 
+    text-align: left; 
+    border-bottom: 2px solid var(--rojo); 
+    padding: 12px 8px; 
+    color: #444;
+}
+
+.tabla-pedidos td { 
+    padding: 12px 8px; 
+    border-bottom: 1px solid #ddd; 
+    font-size: 0.9rem; 
+}
+
+/* Pequeña etiqueta para el tipo de entrega */
+.badge { 
+    background: var(--verde); 
+    color: white; 
+    padding: 3px 8px; 
+    border-radius: 4px; 
+    font-size: 0.75rem; 
+    font-weight: bold;
+}
+
+.add-link { 
+    display: block; 
+    text-align: center; 
+    margin-top: 20px; 
+    color: var(--rojo); 
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.add-link:hover {
+    text-decoration: underline;
+}
